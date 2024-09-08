@@ -16,12 +16,20 @@
 // Header file for input output functions
 #include <stdio.h>
 #include <math.h>
-#define PI  3.14159;
 
+#define PI  3.14159
+
+
+double diameterToRadius(double diameter)
+{
+
+return diameter / 2;
+
+}
 
 double calculateDistanceFormula(double x1, double y1, double x2, double y2)
 {
-    
+
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
 }
@@ -77,7 +85,7 @@ double calculatePerimeter()
     
     //calculates perimeter between the two points
     
-    perimeter = calculateDistanceFormula(x1, y1, x2,y2);
+    perimeter = PI * calculateDistanceFormula(x1, y1, x2,y2);
     
     //Prints the user's points and the perimeter between them.
 
@@ -98,9 +106,9 @@ double calculateArea()
 
     askForUserInput(&x1, &y1, &x2, &y2);
 
-    //calculates area from given points
+    //calculates area from given points; pi*r^2
 
-    area =  calculateDistanceFormula(x1, y1, x2, y2);
+    area = PI * pow(diameterToRadius(calculateDistanceFormula(x1, y1, x2, y2)), 2);
     
     printPoint(x1, y1, x2, y2);
 

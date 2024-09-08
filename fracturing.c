@@ -65,7 +65,7 @@ double calculatePerimeter()
 
     printPoint(1, x1, y1);
     printPoint(1, x2, y2);
-    printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);;
+    printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);;
 
     return 3;
 }
@@ -109,7 +109,7 @@ double calculateWidth()
     printPoint(1, x1, y1);
     printPoint(1, x2, y2);
 
-    printf("The width of the city encompassed by your request is %.2lf", width);
+    printf("The width of the city encompassed by your request is %.2lf\n", width);
 
     return 0.5;
 
@@ -133,7 +133,7 @@ double calculateHeight()
     printPoint(1, x1, y1);
     printPoint(1, x2, y2);
 
-    printf("The height of the city encompassed by your request is %.2lf", height);
+    printf("The height of the city encompassed by your request is %.2lf\n", height);
 
     return 0.5;
 

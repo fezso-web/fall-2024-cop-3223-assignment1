@@ -25,12 +25,14 @@ double calculateDistanceFormula(double x1, double y1, double x2, double y2)
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
 }
+
 void askForUserInput(double* x, double* y, int pointNumber) {
     
     printf("Enter Point #%d (x y): ", pointNumber);
     scanf("%lf %lf", x, y);
 
 }
+
 void printPoint(double x, double y, int pointNumber)
 {
 
@@ -166,7 +168,6 @@ double calculateHeight()
     return 0.5;
 
 }
-
 
 
 int main(int argc, char** argv) 

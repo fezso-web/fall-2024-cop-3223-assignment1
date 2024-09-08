@@ -87,7 +87,7 @@ double calculatePerimeter()
     
     perimeter = PI * calculateDistanceFormula(x1, y1, x2,y2);
     
-    //Prints the user's points and the perimeter between them.
+    //Prints the user's points and the perimeter.
 
     printPoint(x1, y1, x2, y2);
 
@@ -106,11 +106,13 @@ double calculateArea()
 
     askForUserInput(&x1, &y1, &x2, &y2);
 
-    //calculates area from given points; pi*r^2
+    //calculates area from given points: pi*(r^2)
 
     radius = diameterToRadius(calculateDistanceFormula(x1, y1, x2, y2));
     area = PI * pow(radius, 2);
     
+    //Prints the user's points and the area.
+
     printPoint(x1, y1, x2, y2);
 
     printf("The area of the city encompassed by your request is %.2lf\n", area);
@@ -131,7 +133,9 @@ double calculateWidth()
     //calculates width from user's points
 
     width =  fabs(x2-x1);
-    
+
+    //Prints the user's points and the wdith.
+
     printPoint(x1, y1, x2, y2);
 
     printf("The width of the city encompassed by your request is %.2lf\n", width);
@@ -153,6 +157,8 @@ double calculateHeight()
 
     height =  fabs(y2-y1);
     
+    //Prints the user's points and the height.
+
     printPoint(x1, y1, x2, y2);
 
     printf("The height of the city encompassed by your request is %.2lf\n", height);

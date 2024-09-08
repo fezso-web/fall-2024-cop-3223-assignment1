@@ -34,7 +34,8 @@ double calculateDistanceFormula(double x1, double y1, double x2, double y2)
 
 }
 
-void askForUserInput(double* x1, double* y1, double* x2, double* y2) {
+void askForUserInput(double* x1, double* y1, double* x2, double* y2) 
+{
     
     printf("Enter Point #%d (x y): ", 1);
     scanf("%lf %lf", x1, y1);

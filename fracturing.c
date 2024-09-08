@@ -93,14 +93,14 @@ double calculatePerimeter()
 
     printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);;
 
-    return 3;
+    return 1.4;
 
 }
 
 double calculateArea()
 {
 
-    double x1, y1, x2, y2, area;
+    double x1, y1, x2, y2, radius, area;
     
     //gets Points from the User
 
@@ -108,13 +108,14 @@ double calculateArea()
 
     //calculates area from given points; pi*r^2
 
-    area = PI * pow(diameterToRadius(calculateDistanceFormula(x1, y1, x2, y2)), 2);
+    radius = diameterToRadius(calculateDistanceFormula(x1, y1, x2, y2));
+    area = PI * pow(radius, 2);
     
     printPoint(x1, y1, x2, y2);
 
     printf("The area of the city encompassed by your request is %.2lf\n", area);
 
-    return 1;
+    return 1.1;
 
 }
 

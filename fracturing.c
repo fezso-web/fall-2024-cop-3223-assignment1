@@ -8,7 +8,6 @@
 // and less repetitive. It also teaches us how to 
 //isolate problems in an efficient manner.
 // Input: None
-//
 // Output: (to the command line) A series of outputs
 //relating to the calculation methods created by me.
 // //********************************************************
@@ -51,6 +50,7 @@ void printPoint(double x1, double y1, double x2, double y2)
     printf("Point #%d entered: x%d = %.2lf; y%d = %.2lf\n", 1,1, x1, 1,y1);
 
     printf("Point #%d entered: x%d = %.2lf; y%d = %.2lf\n", 2,2, x2, 2,y2);
+    
 }
 
 double calculateDistance()
